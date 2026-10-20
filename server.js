@@ -147,6 +147,6 @@ app.post('/api/orders', (req,res)=>{
   res.json({success:true, order});
 });
 
-app.get('/', (req,res)=> res.sendFile(path.join(__dirname, '..', 'index.html')));
+
 
 app.listen(PORT, '0.0.0.0', ()=> console.log(`✅ AgriSathi Backend LIVE on http://0.0.0.0:${PORT} - DB: ${DB_FILE}`));
